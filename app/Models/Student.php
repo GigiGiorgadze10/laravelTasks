@@ -3,7 +3,7 @@
 namespace App\Models;
 
 class Student extends Person {
-    private $studentId;  // Change to protected or add a getter method
+    private $studentId; 
 
     public function __construct($name, $age, $studentId) {
         parent::__construct($name, $age);
@@ -11,6 +11,6 @@ class Student extends Person {
     }
 
     public function getStudentId() {
-        return $this->studentId;  // Getter for accessing studentId
+        return $this->studentId;  
     }
 }
